@@ -15,5 +15,6 @@ router.patch(
   validateRequest(userValidations.updateUserValidation),
   userControler.updateUser,
 );
+router.get('/:email', userControler.getSingleUser);
 
 export const userRouter = router;
